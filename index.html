@@ -3,213 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hanoi Travel Tours</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      background: #f7f9fb;
-      color: #333;
-    }
-
-    /* Navigation Bar */
-    nav {
-      background: #004d55;
-      padding: 1rem;
-      text-align: center;
-    }
-
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #ffb703;
-    }
-
-    header {
-      text-align: center;
-      padding: 2rem;
-      background: #e3f2f0;
-    }
-
-    header h1 {
-      margin-bottom: 0.5rem;
-      color: #004d55;
-    }
-
-    header p {
-      color: #555;
-    }
-
-    .grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
-      padding: 2rem;
-    }
-
-    .tour {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      overflow: hidden;
-      width: 320px;
-      transition: transform 0.2s ease;
-    }
-
-    .tour:hover {
-      transform: translateY(-5px);
-    }
-
-    .tour img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-
-    .content {
-      padding: 1rem;
-    }
-
-    .content h2 {
-      color: #004d55;
-      margin-bottom: 0.5rem;
-    }
-
-    .content p {
-      font-size: 0.95rem;
-      margin-bottom: 0.5rem;
-    }
-
-    button {
-      background: #ffb703;
-      border: none;
-      padding: 0.7rem 1.5rem;
-      border-radius: 5px;
-      cursor: pointer;
-      font-weight: 600;
-      transition: background 0.3s;
-    }
-
-    button:hover {
-      background: #e89c00;
-    }
-
-    /* About & Contact Sections */
-    section {
-      padding: 2rem;
-      text-align: center;
-    }
-
-    #about {
-      background: #fffbea;
-    }
-
-    #contact {
-      background: #f1f1f1;
-    }
-
-    footer {
-      background: #004d55;
-      color: white;
-      text-align: center;
-      padding: 1.5rem;
-    }
-
-    footer a {
-      color: #ffb703;
-      text-decoration: none;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    @media (max-width: 600px) {
-      .grid {
-        flex-direction: column;
-        align-items: center;
-      }
-      .tour {
-        width: 90%;
-      }
-    }
-  </style>
+  <title>Vietnam Travel Tours</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <nav>
-    <a href="#tours">Tours</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
   <header>
-    <h1>Hanoi Travel Tours</h1>
-    <p>Discover authentic Vietnam experiences from the heart of Hanoi 🇻🇳</p>
+    <h1>Explore Northern Vietnam</h1>
+    <p>Discover the best tours from Hanoi, Ninh Binh & Ba Vi</p>
   </header>
 
   <section id="tours" class="grid">
+
+    <!-- Tour 1: Hanoi -->
     <div class="tour">
       <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Hanoi City Tour" />
       <div class="content">
         <h2>Hanoi City Highlights (Full Day)</h2>
         <p>Visit Ho Chi Minh Mausoleum, Temple of Literature, and enjoy a cyclo ride around the Old Quarter.</p>
         <p><strong>Price:</strong> $50 / person</p>
-        <button onclick="window.location.href='https://forms.gle/oVV1anJrJKLvcmxa6'">Book Now</button>
+        <div class="tour-buttons">
+          <button onclick="window.location.href='itinerary-hanoi.html'">View Itinerary</button>
+          <button onclick="window.location.href='booking.html'">Book Now</button>
+        </div>
       </div>
     </div>
 
+    <!-- Tour 2: Ninh Binh -->
     <div class="tour">
-      <img src="https://vinwonders.com/en/wonderpedia/news/bat-trang-pottery-village-a-traditional-imprint-in-the-heart-of-hanoi/" alt="Ninh Binh Day Tour" />
+      <img src="https://images.unsplash.com/photo-1600948836101-fb9f0f77a2a3" alt="Ninh Binh Tour" />
       <div class="content">
-        <h2>Ninh Binh Day Tour from Hanoi</h2>
-        <p>Explore Trang An grottoes, climb Mua Cave, and take a boat ride among limestone mountains.</p>
-        <p><strong>Price:</strong> $75 / person</p>
-        <button onclick="window.location.href='https://forms.gle/oVV1anJrJKLvcmxa6'">Book Now</button>
-      </div>
-    </div>
-
-    <div class="tour">
-      <img src="https://sungetawaystravel.com/ba-vi-national-park/" alt="Ba Vi Tour" />
-      <div class="content">
-        <h2>Ba Vi National Park Trek</h2>
-        <p>Escape the city, hike through forest trails, and enjoy panoramic views from Ba Vi mountain peaks.</p>
+        <h2>Ninh Binh – Hoa Lu & Trang An</h2>
+        <p>Discover the ancient capital of Hoa Lu and enjoy a peaceful boat trip through Trang An’s caves.</p>
         <p><strong>Price:</strong> $65 / person</p>
-        <button onclick="window.location.href='https://forms.gle/oVV1anJrJKLvcmxa6'">Book Now</button>
+        <div class="tour-buttons">
+          <button onclick="window.location.href='itinerary-ninhbinh.html'">View Itinerary</button>
+          <button onclick="window.location.href='booking.html'">Book Now</button>
+        </div>
       </div>
     </div>
-  </section>
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>We are local travel experts based in Hanoi, offering unique tours for international visitors.  
-    Experience authentic culture, food, and people with our passionate local guides.</p>
-  </section>
+    <!-- Tour 3: Ba Vi -->
+    <div class="tour">
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Ba Vi National Park Tour" />
+      <div class="content">
+        <h2>Ba Vi Mountain Escape</h2>
+        <p>Relax in the fresh air of Ba Vi National Park, visit ancient temples, and enjoy local cuisine.</p>
+        <p><strong>Price:</strong> $55 / person</p>
+        <div class="tour-buttons">
+          <button onclick="window.location.href='itinerary-bavi.html'">View Itinerary</button>
+          <button onclick="window.location.href='booking.html'">Book Now</button>
+        </div>
+      </div>
+    </div>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>📍 Hanoi, Vietnam</p>
-    <p>📧 info@hanoitours.com</p>
-    <p>☎️ +84 909 123 456</p>
   </section>
 
   <footer>
-    <p>Follow us:
-      <a href="#">Facebook</a> |
-      <a href="#">Instagram</a>
-    </p>
-    <p>© 2025 Hanoi Travel Tours</p>
+    <p>© 2025 Vietnam Travel Tours | Made with ❤️ in Hanoi</p>
   </footer>
 </body>
 </html>
